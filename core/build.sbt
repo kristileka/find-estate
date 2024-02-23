@@ -8,4 +8,9 @@ lazy val core = project
   .settings(commonSettings)
   .settings(
     name := "core",
+    libraryDependencies := Seq(
+      "com.typesafe.slick" %% "slick"       % "3.4.1",
+      "org.postgresql"     % "postgresql"   % "42.7.1",
+      "org.flywaydb"       %% "flyway-play" % "9.0.0"
+    )
   )
