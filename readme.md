@@ -1,4 +1,4 @@
-# Twitter Clone
+# Find Estate
 
 This project will be a twitter clone, that will try to clone most of the parts that twitter has. It is a fullstack version, where the application will be written with flutter,
 there will be a backend on Scala, and a data layer of python. THe communication between services will be using grpc. 
