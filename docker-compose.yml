@@ -3,11 +3,11 @@ version: "3.8"
 services:
   db:
     image: postgres:14.5
-    container_name: twitter-clone-postgres
+    container_name: find-estate-postgres
     ports:
       - "5431:5432"
     environment:
-      POSTGRES_USER: twitter-user
-      POSTGRES_PASSWORD: twitter-password
-      POSTGRES_DB: twitter
+      POSTGRES_USER: find-estate-user
+      POSTGRES_PASSWORD: find-estate-password
+      POSTGRES_DB: find-estate
     restart: "no"
