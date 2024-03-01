@@ -27,7 +27,7 @@ class Module(environment: Environment, configuration: Configuration) extends Abs
 }
 @Singleton
 class DatabaseProvider @Inject()(config: Config) extends Provider[Database] {
-  override def get(): Database = Database.forConfig("mydb", config)
+  override def get(): Database = Database.forConfig("postgres", config)
 }
 
 /** Closes database connections safely.  Important on dev restart. */
