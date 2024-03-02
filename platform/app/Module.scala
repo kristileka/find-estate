@@ -25,6 +25,7 @@ class Module(environment: Environment, configuration: Configuration) extends Abs
     bind(classOf[CustomerDAOCloseHook]).asEagerSingleton()
   }
 }
+
 @Singleton
 class DatabaseProvider @Inject()(config: Config) extends Provider[Database] {
   override def get(): Database = Database.forConfig("postgres", config)
