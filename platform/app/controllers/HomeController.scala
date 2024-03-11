@@ -11,7 +11,6 @@ import javax.inject._
 class HomeController @Inject()(val controllerComponents: ControllerComponents) extends BaseController {
 
   def test(): Action[AnyContent] = Action {
-    Ok("asda" +
-      "jnksd")
+    Ok("test controller")
   }
 }
